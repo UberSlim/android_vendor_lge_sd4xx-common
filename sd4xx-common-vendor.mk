@@ -18,13 +18,20 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/lge/sd4xx-common/proprietary/bin/cnd:system/bin/cnd \
     vendor/lge/sd4xx-common/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/lge/sd4xx-common/proprietary/bin/iop:system/bin/iop \
     vendor/lge/sd4xx-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/lge/sd4xx-common/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/lge/sd4xx-common/proprietary/bin/lowi-server:system/bin/lowi-server \
+    vendor/lge/sd4xx-common/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/lge/sd4xx-common/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/lge/sd4xx-common/proprietary/bin/pm-proxy:system/bin/pm-proxy \
+    vendor/lge/sd4xx-common/proprietary/bin/pm-service:system/bin/pm-service \
+    vendor/lge/sd4xx-common/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/lge/sd4xx-common/proprietary/bin/radish:system/bin/radish \
     vendor/lge/sd4xx-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/lge/sd4xx-common/proprietary/bin/tftp_server:system/bin/tftp_server \
+    vendor/lge/sd4xx-common/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/lge/sd4xx-common/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/lge/sd4xx-common/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/lge/sd4xx-common/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/lge/sd4xx-common/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
@@ -81,7 +88,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/lge/sd4xx-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/lge/sd4xx-common/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/lge/sd4xx-common/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
     vendor/lge/sd4xx-common/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/lge/sd4xx-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -97,13 +107,18 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/hw/gatekeeper.msm8937.so:system/vendor/lib/hw/gatekeeper.msm8937.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/hw/keystore.msm8937.so:system/vendor/lib/hw/keystore.msm8937.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/hw/vulkan.msm8937.so:system/vendor/lib/hw/vulkan.msm8937.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libDRPlugin.so:system/vendor/lib/libDRPlugin.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/lib_rsu.so:system/vendor/lib/lib_rsu.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
@@ -117,6 +132,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
@@ -150,6 +166,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
@@ -162,6 +179,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
@@ -174,14 +193,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/egl/eglsubAndroid.so:system/vendor/lib64/egl/eglsubAndroid.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
@@ -197,13 +219,23 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/hw/gatekeeper.msm8937.so:system/vendor/lib64/hw/gatekeeper.msm8937.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/hw/keystore.msm8937.so:system/vendor/lib64/hw/keystore.msm8937.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/hw/vulkan.msm8937.so:system/vendor/lib64/hw/vulkan.msm8937.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libGPTEE.so:system/vendor/lib64/libGPTEE.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libStDrvInt.so:system/vendor/lib64/libStDrvInt.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/lib_rsu.so:system/vendor/lib64/lib_rsu.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
@@ -226,6 +258,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
@@ -255,10 +289,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqisl.so:system/vendor/lib64/libqisl.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqmi_cci.so:system/vendor/lib64/libqmi_cci.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqmi_client_helper.so:system/vendor/lib64/libqmi_client_helper.so \
@@ -267,6 +303,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqmi_csi.so:system/vendor/lib64/libqmi_csi.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libqti-wl.so:system/vendor/lib64/libqti-wl.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
@@ -274,6 +312,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsc-a3xx.so:system/vendor/lib64/libsc-a3xx.so \
@@ -284,9 +323,16 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsdm-disp-apis.so:system/vendor/lib64/libsdm-disp-apis.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsecureui.so:system/vendor/lib64/libsecureui.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsecureuisvc_jni.so:system/vendor/lib64/libsecureuisvc_jni.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
+    vendor/lge/sd4xx-common/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/lge/sd4xx-common/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
@@ -300,7 +346,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
+    libtime_genoff \
     QtiTelephonyService \
+    TimeService \
     datastatusnotification \
     fastdormancy \
     shutdownlistener \
